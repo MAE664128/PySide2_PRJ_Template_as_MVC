@@ -1,0 +1,28 @@
+<RCC>
+  <qresource prefix="css"/>
+  <qresource prefix="icons">
+    <file>img/icons/androidAsset 49.png</file>
+    <file>img/icons/arrow.png</file>
+    <file>img/icons/bookAsset 57.png</file>
+    <file>img/icons/bugAsset 47.png</file>
+    <file>img/icons/bulletAsset 54.png</file>
+    <file>img/icons/cleanAsset 59.png</file>
+    <file>img/icons/closeAsset 43.png</file>
+    <file>img/icons/cloudAsset 48.png</file>
+    <file>img/icons/dragAsset 52.png</file>
+    <file>img/icons/errorAsset 55.png</file>
+    <file>img/icons/gameAsset 61.png</file>
+    <file>img/icons/hideAsset 53.png</file>
+    <file>img/icons/homeAsset 46.png</file>
+    <file>img/icons/logo.png</file>
+    <file>img/icons/max.png</file>
+    <file>img/icons/peopleAsset 62.png</file>
+    <file>img/icons/peple.png</file>
+    <file>img/icons/restore.png</file>
+    <file>img/icons/settAsset 50.png</file>
+    <file>img/icons/smile2Asset 1.png</file>
+    <file>img/icons/smileAsset 1.png</file>
+    <file>img/icons/windAsset 51.png</file>
+    <file>img/icons/worldAsset 60.png</file>
+  </qresource>
+</RCC>
