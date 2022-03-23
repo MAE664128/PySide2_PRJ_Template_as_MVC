@@ -6,7 +6,7 @@ from .ui_main import Ui_MainWindow
 
 
 class MainView(QMainWindow):
-    def __init__(self, model: Union[QObject, Dict[QObject]], main_controller: QObject, title_win: Optional[str]):
+    def __init__(self, model: Union[QObject, Dict[str, QObject]], main_controller: QObject, title_win: Optional[str]):
         super().__init__()
 
         self.__model = model
@@ -28,6 +28,7 @@ class MainView(QMainWindow):
         self.__model.line_family_changed.connect(self.on_line_family_changed)
         self.__model.line_name_changed.connect(self.on_line_name_changed)
         self.__model.line_middle_name_changed.connect(self.on_line_middle_name_changed)
+        self.__model.title_window_changed.connect(self.on_title_window_changed_changed)
 
         # устанавливаем значение по умолчанию
         self.__main_controller.change_line_home_family("")
@@ -45,3 +46,7 @@ class MainView(QMainWindow):
     @Slot(str)
     def on_line_middle_name_changed(self, value):
         self.__ui.line_home_middle_name.setText(value)
+
+    @Slot(str)
+    def on_title_window_changed_changed(self, value):
+        self.setWindowTitle(f"Текущее время: {value}")
